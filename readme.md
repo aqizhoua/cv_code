@@ -1,0 +1,11 @@
+cv常见模型代码复现（pytorch）
+- 分类
+  - - [x] lenet 
+  - alexnet
+  - vggnet
+  - googlenet
+  - resnet
+  - densenet
+  - senet(以及相关注意力机制attention)
+  - mobilenet
+  - shufflenet
