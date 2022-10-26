@@ -181,6 +181,7 @@ max_accuracy = 0
 
 for epoch in range(20):
     net.train()
+    epoch_loss_sum = 0
     print("-------------第{}轮 训练-------------".format(epoch+1))
     for i,data in enumerate(train_loader):
         imgs,targets = data
@@ -197,8 +198,8 @@ for epoch in range(20):
 
         loss = lossFunc(output,targets)
 
+        epoch_loss_sum += loss
 
-        train_loss.append(loss.item())
 
         optimizer.zero_grad()
 
@@ -210,6 +211,8 @@ for epoch in range(20):
             print("训练次数：{}，loss:{}".format(i+1,loss.item()))
 
         # print(train_loss)
+
+    train_loss.append(epoch_loss_sum.item())
 
 
     net.eval()
