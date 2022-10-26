@@ -177,6 +177,8 @@ optimizer = optim.Adam(net.parameters(),lr=0.001)
 train_loss = []
 test_accuracy = []
 
+max_accuracy = 0
+
 for epoch in range(20):
     net.train()
     print("-------------第{}轮 训练-------------".format(epoch+1))
@@ -212,7 +214,6 @@ for epoch in range(20):
 
     net.eval()
     accuracy = 0
-    max_accuracy = 0
     total_correct=0
     for data in test_loader:
         imgs,targets = data

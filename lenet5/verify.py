@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 net = torch.load("model.plt",map_location=torch.device('cpu')) #把模型放到cpu上，因为是用mps训练出的模型，所以默认是在mps处理
 
-img_path = "/Users/aqizhou/PycharmProjects/pytorch_study/21_model_train/imgs/dog.png"
+img_path = "/Users/aqizhou/PycharmProjects/pytorch_study/21_model_train/imgs/cat.png"
 
 img =Image.open(img_path)
 
