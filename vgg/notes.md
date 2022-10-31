@@ -1,0 +1,5 @@
+- 感受野计算公式：
+  - F(i)=(F(i+1)-1)*stride+kernelSize
+    - F(i)：第i层感受野
+    - stride:第i层的步距
+    - kernelSize:卷积核大小
