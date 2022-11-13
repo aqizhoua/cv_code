@@ -2,7 +2,7 @@ cv常见模型代码复现（pytorch）
 - 分类
   - - [x] lenet 
   - - [x] alexnet
-  - vggnet
+  - - [x] vggnet
   - googlenet
   - resnet
   - densenet
