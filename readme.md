@@ -3,7 +3,7 @@ cv常见模型代码复现（pytorch）
   - - [x] lenet 
   - - [x] alexnet
   - - [x] vggnet
-  - googlenet
+  - - [x] sgooglenet
   - resnet
   - densenet
   - senet(以及相关注意力机制attention)
